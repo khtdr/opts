@@ -1,7 +1,7 @@
 /***************************************************************************
 Author   : Joey Mazzarelli
 Email    : mazzarelli@gmail.com
-Homepage : http://joey.mazzarelli.com
+Homepage : http://joey.mazzarelli.com/js-opts
 Source   : http://bitbucket.org/mazzarell/js-opts/
 License  : Simplified BSD License
 Version  : 1.0
