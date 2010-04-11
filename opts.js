@@ -34,7 +34,7 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of Joey Mazzarelli.
 ***************************************************************************/
 
-var print       = require('sys').puts
+var puts        = require('sys').puts
   , values      = {}
   , args        = []
   , errors      = []
@@ -80,7 +80,7 @@ exports.parse = function (options, help) {
       if (!opts['-' + options[i].short]) {
         opts['-' + options[i].short] = options[i];
       } else {
-        print('Conflicting flags: -' + options[i].short);
+        puts('Conflicting flags: -' + options[i].short);
         process.exit(1);
       }
     }
@@ -88,7 +88,7 @@ exports.parse = function (options, help) {
       if (!opts['--' + options[i].long]) {
         opts['--' + options[i].long] = options[i];
       } else {
-        print('Conflicting flags: --' + options[i].long);
+        puts('Conflicting flags: --' + options[i].long);
         process.exit(1);
       }
     }
@@ -121,8 +121,8 @@ exports.parse = function (options, help) {
       // No match. If it starts with a dash, show an error. Otherwise
       // add it to the extra args.
       if (inp[0] == '-') {
-        print('Unknown option: ' + inp);
-        if (opts['--help']) print('Try --help');
+        puts('Unknown option: ' + inp);
+        if (opts['--help']) puts('Try --help');
         process.exit(1);
       } else {
         args.push(inp);
@@ -136,7 +136,7 @@ exports.parse = function (options, help) {
     }
   }
   if (errors.length) {
-    for (var i=0; i<errors.length; i++) print(errors[i]);
+    for (var i=0; i<errors.length; i++) puts(errors[i]);
     process.exit(1);
   }
 };
@@ -160,14 +160,14 @@ exports.help = function () {
   for (var i=0; i<descriptors.length; i++) {
     var opt = descriptors[i];
     var line;
-    if (opt.description) print(opt.description);
+    if (opt.description) puts(opt.description);
     if (opt.short && !opt.long) line = '-' + opt.short;
     else if (opt.long && !opt.short) line = '--' + opt.long;
     else line = '-' + opt.short + ', --' + opt.long;
     if (opt.value) line += ' <value>';
     if (opt.required) line += ' (required)';
-    print('    ' + line);
+    puts('    ' + line);
   }
-  process.exit(1);
+  process.exit(0);
 };
 
