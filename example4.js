@@ -20,6 +20,11 @@ var libOpts = [
 ];
 opts.add(libOpts, 'mylib');
 
+// NOTE: ------------
+// You would never actually add options for a library from within your
+// app, this would be done from within the library itself. It is shown
+// here for readability
+
 var options = [
   { short       : 'l' // deliberately conflicting with 'mylib' option
   , long        : 'list'
