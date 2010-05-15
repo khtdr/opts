@@ -94,7 +94,7 @@ exports.add = function (options, namespace) {
 exports.parse = function (options, params, help) {
 
   if (params === true) {
-    help == true;
+    help = true;
   } else if (!params) {
     params = [];
   } else {
