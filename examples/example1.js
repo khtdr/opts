@@ -3,7 +3,7 @@
  *
  * Examples:
  *   $ node example1.js
- *   
+ *
  *   Example 1
  *   $ node example1.js -v
  *   > v1.0
@@ -21,19 +21,18 @@
  *         --help
  */
 
-var opts = require('./opts')
-  , puts = require('sys').puts;
+var opts = require('./../js/opts');
 
 var options = [
   { short       : 'v'
   , long        : 'version'
   , description : 'Show version and exit'
-  , callback    : function () { puts('v1.0'); process.exit(1); }
+  , callback    : function () { console.log('v1.0'); process.exit(1); }
   }
 ];
 
 opts.parse(options, true);
-puts('Example 1');
+console.log('Example 1');
 process.exit(0);
 
 

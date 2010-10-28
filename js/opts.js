@@ -34,7 +34,7 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of Joey Mazzarelli.
 ***************************************************************************/
 
-var puts        = require('sys').puts
+var puts        = console.log
   , values      = {}
   , args        = {}
   , argv        = []

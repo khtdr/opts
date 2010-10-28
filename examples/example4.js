@@ -6,8 +6,7 @@
  * and play with the options to see the behavior.
  */
 
-var opts = require('./opts')
-  , puts = require('sys').puts
+var opts = require('./../js/opts')
   , host = 'localhost'; // default host value
 
 // Example of using some library in the same app
@@ -15,7 +14,7 @@ var libOpts = [
   { short       : 'l'
   , long        : 'list'
   , description : 'Show the library list'
-  , callback    : function () { puts('mylib list!'); },
+  , callback    : function () { console.log('mylib list!'); },
   },
 ];
 opts.add(libOpts, 'mylib');
@@ -50,10 +49,10 @@ var script  = opts.arg('script')
   , timeout = opts.arg('timeout') || 30;
 
 
-if (list) puts('List arg was set');
-puts('Debug level is: ' + debug);
-puts('Script is: ' + script);
-puts('Timeout is: ' + timeout);
+if (list) console.log('List arg was set');
+console.log('Debug level is: ' + debug);
+console.log('Script is: ' + script);
+console.log('Timeout is: ' + timeout);
 
 process.exit(0);
 
