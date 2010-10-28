@@ -42,6 +42,11 @@ var puts        = console.log
   , descriptors = {opts:[], args:[]};
 
 /**
+ * Get some version info out of it
+ */
+exports.version = '1.2.1';
+
+/**
  * Add a set of option descriptors, not yet ready to be parsed.
  * See exports.parse for description of options object
  *
