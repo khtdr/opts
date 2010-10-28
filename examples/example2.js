@@ -9,15 +9,14 @@
  * inconsistent. Choose the style that suits you best.
  */
 
-var opts = require('./opts')
-  , puts = require('sys').puts
+var opts = require('./../js/opts')
   , host = 'localhost'; // default host value
 
 var options = [
   { short       : 'v'
   , long        : 'version'
   , description : 'Show version and exit'
-  , callback    : function () { puts('v1.0'); process.exit(1); }
+  , callback    : function () { console.log('v1.0'); process.exit(1); }
   },
   { short       : 'l'
   , long        : 'list'
@@ -58,14 +57,14 @@ var arg1 = opts.args()[0]
   , arg2 = opts.args()[1];
 
 
-if (list) puts('List arg was set');
-if (file) puts('File arg was set: ' + file);
-puts('Debug level is: ' + debug);
-puts('Host is: ' + host);
-puts('Port is: ' + port);
+if (list) console.log('List arg was set');
+if (file) console.log('File arg was set: ' + file);
+console.log('Debug level is: ' + debug);
+console.log('Host is: ' + host);
+console.log('Port is: ' + port);
 
-if (arg1) puts('Extra arg 1: ' + arg1);
-if (arg2) puts('Extra arg 2: ' + arg2);
+if (arg1) console.log('Extra arg 1: ' + arg1);
+if (arg2) console.log('Extra arg 2: ' + arg2);
 
 process.exit(0);
 
