@@ -100,6 +100,7 @@ exports.parse = function (options, params, help) {
 
   if (params === true) {
     help = true;
+    params = [];
   } else if (!params) {
     params = [];
   } else {
