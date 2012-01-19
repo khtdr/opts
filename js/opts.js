@@ -74,6 +74,7 @@ exports.add = function (options, namespace) {
  *     long        : 'list',
  *     description : 'Show a list',
  *     value       : false,  // default false
+ *     multiple    : false,  // default false, if true multiple values are permitted, separated by spaces
  *     required    : true,   // default false
  *     callback    : function (value) { ... },
  *   }
