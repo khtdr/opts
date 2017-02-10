@@ -1,6 +1,6 @@
 
 
-# JS-OPTS
+# OPTS
 
 ## Installation
 Simply download and include [src/opts.js](https://raw.githubusercontent.com/khtdr/opts/master/src/opts.js) to your Node.js project and import it with the require function. See included files for an example.
