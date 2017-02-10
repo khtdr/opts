@@ -6,7 +6,7 @@
  * and play with the options to see the behavior.
  */
 
-var opts = require('./../js/opts')
+var opts = require('..')
   , host = 'localhost'; // default host value
 
 // Example of using some library in the same app

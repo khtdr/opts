@@ -6,7 +6,7 @@
  *   > Conflicting flags: -v
  */
 
-var opts = require('./../js/opts');
+var opts = require('..');
 
 var options = [
   { short       : 'v'

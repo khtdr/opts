@@ -9,7 +9,7 @@
  * inconsistent. Choose the style that suits you best.
  */
 
-var opts = require('./../js/opts')
+var opts = require('..')
   , host = 'localhost'; // default host value
 
 var options = [
