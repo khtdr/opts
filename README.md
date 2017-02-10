@@ -1,26 +1,19 @@
 
-Version:
-1.0
 
-Installation:
-Just copy opts.js to your node.js project and import it with the require
-function. See included files for an example.
+# JS-OPTS
 
-== JS-OPTS ==
+## Installation
+Simply download and include [src/opts.js](src/opts.js) to your Node.js project and import it with the require function. See included files for an example.
 
-js-opts is a library for parsing command line options in javascript. It works with node.js (http://www.nodejs.org). See the examples below.
-
-If you use [[http://npmjs.org/|NPM]] you can install it from the registry under the name {{{opts}}}
-{{{
-#!bash
+If you use NPM,  you can install it from the registry under the name `opts`
+```bash
 npm install opts
-}}}
+```
 
-=== Examples ===
+## Examples
 
-==== Example 1 -- Simple "getting started" example ====
-{{{
-#!javascript
+#### Example 1 -- Simple "getting started" example
+```javascript
 /**
  * Simple example with one optional parameter, including the help option.
  *
@@ -57,12 +50,11 @@ var options = [
 opts.parse(options, true);
 console.log('Example 1');
 process.exit(0);
-}}}
+```
 
 
-==== Example 2 -- Showing more features ====
-{{{
-#!javascript
+#### Example 2 -- Showing more features
+```javascript
 /**
  * More complex example.
  *
@@ -132,12 +124,11 @@ if (arg1) console.log('Extra arg 1: ' + arg1);
 if (arg2) console.log('Extra arg 2: ' + arg2);
 
 process.exit(0);
-}}}
+```
 
-==== Example 3 -- Showing conflict detection ====
+#### Example 3 -- Showing conflict detection
 
-{{{
-#!javascript
+```javascript
 /**
  * Simple example that is broken by design (conflicting options)
  *
@@ -160,11 +151,11 @@ var options = [
 opts.parse(options);
 console.log('Example 3');
 process.exit(0);
-}}}
-==== Example 4 -- Shows how to use named arguments and using from within a library ====
+```
 
-{{{
-#!javascript
+#### Example 4 -- Shows how to use named arguments and using from within a library
+
+```javascript
 /**
  * Advanced example using namespaces for a library and named arguments
  *
@@ -217,5 +208,5 @@ console.log('Script is: ' + script);
 console.log('Timeout is: ' + timeout);
 
 process.exit(0);
-}}}
+```
 
