@@ -1,10 +1,9 @@
 /***************************************************************************
-Author   : Joey Mazzarelli
-Email    : mazzarelli@gmail.com
-Homepage : http://joey.mazzarelli.com/js-opts
-Source   : http://bitbucket.org/mazzarell/js-opts/
+Author   : Joey Mazzarelli, Kay Oh
+Email    : khtdr.com@gmail.com
+Homepage : http://github.com/khtdr/opts
+Source   : http://github.com/khtdr/opts.git
 License  : Simplified BSD License
-Version  : 1.0
 
 Copyright 2010 Joey Mazzarelli. All rights reserved.
 
