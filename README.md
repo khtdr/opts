@@ -10,6 +10,8 @@ If you use NPM,  you can install it from the registry under the name `opts`
 npm install opts
 ```
 
+[![NPM](https://nodei.co/npm/opts.png)](https://npmjs.org/package/opts)
+
 ## Examples
 
 #### Example 1 -- Simple "getting started" example
