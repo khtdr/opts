@@ -3,6 +3,10 @@
 # OPTS
 
 [![NPM version](https://img.shields.io/npm/v/opts.svg)](https://www.npmjs.com/package/opts)
+[![npm](https://img.shields.io/npm/l/express.svg)]()
+[![npm](https://img.shields.io/npm/dd/opts.svg)]()
+[![npm](https://img.shields.io/npm/dm/opts.svg)]()
+[![npm](https://img.shields.io/npm/dt/opts.svg)]()
 
 ## Installation
 Simply download and include [src/opts.js](https://raw.githubusercontent.com/khtdr/opts/master/src/opts.js) to your Node.js project and import it with the require function. See included files for an example.
