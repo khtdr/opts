@@ -3,7 +3,6 @@
 # OPTS
 
 [![NPM version](https://img.shields.io/npm/v/opts.svg)](https://www.npmjs.com/package/opts)
-[![npm](https://img.shields.io/npm/l/opts.svg)]()
 [![npm](https://img.shields.io/npm/dm/opts.svg)]()
 [![npm](https://img.shields.io/npm/dt/opts.svg)]()
 
