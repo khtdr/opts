@@ -26,14 +26,14 @@ opts.parse(options, arguments, help);
 
 `options` is an array of option objects. Each option in the array can have the following fields. None are required, but you should at least provide a short or long name.
 
-#### options
+#### Options
 ```javascript
 let options = [
   { short       : 'l',
     long        : 'list',
     description : 'Show a list',
-    value       : false,  // default false
-    required    : true,   // default false
+    value       : false, // default false
+    required    : true, // default false
     callback    : function (value) { ... },
   }, // ... followed by more options
 ];
@@ -48,30 +48,34 @@ ls -l file
 the option(s) are `-l` and the argument(s) are `file`. The arguments can be
 after, before, or among the options.
 
-#### arguments
+#### Arguments
 
-Arguments require less configuration. 
+Arguments require less configuration.  This is an optional argument to
+`opts.parse`.
 
 ```javascript
 let arguments = 
   { name     : 'script',
-    required : true,      // default false
+    required : true, // default false
     callback : function (value) { ... },
   };
 ```
 
-You can add an automatically generated help message by passing
-a last parameter of <true> or by including the following option:
+#### Help Generator
+Finally, you can add an automatically generated help message by passing
+a last parameter of `true`. This is also an optional argument to `opts.parse`.
 
 ```javascript
 opts.parse(options, true);
-// or
-options.push({
-  long        : 'help',
-  description : 'Show this help message',
-  callback    : require('opts').help,
-}
-opts.parse(options);
+// or if you want more control, you can do:
+/*
+  options.push({
+    long        : 'help',
+    description : 'Show this help message',
+    callback    : require('opts').help,
+  }
+  opts.parse(options);
+*/
 ```
 
 
