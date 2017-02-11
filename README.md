@@ -17,6 +17,64 @@ npm install opts
 
 [![NPM](https://nodei.co/npm/opts.png)](https://npmjs.org/package/opts)
 
+## Usage and Docs
+```javascript
+let opts = require('opts');
+opts.parse(options, arguments, help);
+```
+### opts.parse(options, arguments, help)
+
+`options` is an array of option objects. Each option in the array can have the following fields. None are required, but you should at least provide a short or long name.
+
+#### options
+```javascript
+let options = [
+  { short       : 'l',
+    long        : 'list',
+    description : 'Show a list',
+    value       : false,  // default false
+    required    : true,   // default false
+    callback    : function (value) { ... },
+  }, // ... followed by more options
+];
+```
+
+##### Options vs Arguments
+
+Options are flag arguments. Arguments are everything else. For example, in
+```bash
+ls -l file
+```
+the option(s) are `-l` and the argument(s) are `file`. The arguments can be
+after, before, or among the options.
+
+#### arguments
+
+Arguments require less configuration. 
+
+```javascript
+let arguments = 
+  { name     : 'script',
+    required : true,      // default false
+    callback : function (value) { ... },
+  };
+```
+
+You can add an automatically generated help message by passing
+a last parameter of <true> or by including the following option:
+
+```javascript
+opts.parse(options, true);
+// or
+options.push({
+  long        : 'help',
+  description : 'Show this help message',
+  callback    : require('opts').help,
+}
+opts.parse(options);
+```
+
+
 ## Examples
 
 #### Example 1 -- Simple "getting started" example
