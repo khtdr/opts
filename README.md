@@ -1,9 +1,8 @@
-
-
 # OPTS
 
 [![NPM version](https://img.shields.io/npm/v/opts.svg)](https://www.npmjs.com/package/opts)
-[![npm](https://img.shields.io/npm/dm/opts.svg)]()
+[![npm](https://img.shields.io/npm/dm/opts.svg)][![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkhtdr%2Fopts.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkhtdr%2Fopts?ref=badge_shield)
+()
 [![npm](https://img.shields.io/npm/dt/opts.svg)]()
 
 ## Installation
@@ -278,3 +277,7 @@ console.log('Timeout is: ' + timeout);
 process.exit(0);
 ```
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkhtdr%2Fopts.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkhtdr%2Fopts?ref=badge_large)
