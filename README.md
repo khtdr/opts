@@ -4,6 +4,7 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkhtdr%2Fopts.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkhtdr%2Fopts?ref=badge_shield)
 [![npm](https://img.shields.io/npm/dm/opts.svg)](https://www.npmjs.com/package/opts)
 [![npm](https://img.shields.io/npm/dt/opts.svg)](https://www.npmjs.com/package/opts)
+[![npm](https://nodei.co/npm/opts.png)](https://npmjs.org/package/opts)
 
 ## Installation
 Simply download and include [src/opts.js](https://raw.githubusercontent.com/khtdr/opts/master/src/opts.js) to your Node.js project and import it with the require function. See included files for an example.
@@ -274,9 +275,3 @@ console.log('Timeout is: ' + timeout);
 
 process.exit(0);
 ```
-
-## License and Info
-
-[![NPM](https://nodei.co/npm/opts.png)](https://npmjs.org/package/opts)
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkhtdr%2Fopts.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkhtdr%2Fopts?ref=badge_large)
