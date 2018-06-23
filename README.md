@@ -4,6 +4,7 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkhtdr%2Fopts.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkhtdr%2Fopts?ref=badge_shield)
 [![npm](https://img.shields.io/npm/dm/opts.svg)](https://www.npmjs.com/package/opts)
 [![npm](https://img.shields.io/npm/dt/opts.svg)](https://www.npmjs.com/package/opts)
+
 [![npm](https://nodei.co/npm/opts.png)](https://npmjs.org/package/opts)
 
 ## Installation
