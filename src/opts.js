@@ -43,7 +43,7 @@ var puts        = console.log
 /**
  * Get some version info out of it
  */
-exports.version = '1.2.6';
+exports.version = '1.2.7';
 
 /**
  * Add a set of option descriptors, not yet ready to be parsed.
