@@ -211,10 +211,24 @@ exports.parse = function (options, params, help) {
 
 /**
  * Get the value of an option. Can be the short or long option
- * @return string
+ * @return string|true|undefined
  */
 exports.get = function (opt) {
   return values[opt] || values['-' + opt] || values['--' + opt];
+};
+
+/**
+ * Get all of the values after parsing. Can be short or long.
+ * @return {[flag string] string|true}
+ */
+exports.values = function () {
+  return Object.keys(values).reduce(
+    function(dict, name) {
+      name = name.replace('/^-+/', '');
+      dict[name] = exports.get(name);
+      return dict;
+    }, {}
+  );
 };
 
 /**
@@ -246,7 +260,9 @@ exports.help = function () {
 
 // Create the help string
 var helpString = function () {
-  var str = 'Usage: ' + process.argv[0] + ' ' + process.argv[1];
+  var exe = process.argv[0].split(require('path').sep).pop();
+  var file = process.argv[1].replace(process.cwd(), '.');
+  var str = 'Usage: ' + exe + ' ' + file;
   if (descriptors.opts.length) str += ' [options]';
   if (descriptors.args.length) {
     for (var i=0; i<descriptors.args.length; i++) {

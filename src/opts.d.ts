@@ -3,6 +3,7 @@ declare module 'opts' {
   export function parse(opts :Opt[], args? :boolean|Arg[], help? :boolean) :void
   export function add (opts :Opt[], namespace? :string) :void
   export function get (flag :string) :string|true|undefined
+  export function values () :{[flag :string] :string|true|undefined}
   export function args () :string[]
   export function arg (name :string) :string|undefined
   export function help () :void

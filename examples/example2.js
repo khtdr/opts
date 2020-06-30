@@ -49,9 +49,9 @@ var options = [
 opts.parse(options, true);
 
 var port  = opts.get('port') || 8000 // default port value
-  , debug = opts.get('d') || 'info'  // default debug value
-  , file  = opts.get('f')
-  , list  = opts.get('list');
+  , debug = opts.get('d') || 'info'; // default debug value
+// same data, different style of accessing
+var { file, list } = opts.values();
 
 var arg1 = opts.args()[0]
   , arg2 = opts.args()[1];
