@@ -11,7 +11,7 @@
     no code changes, added typescript definitions
 
   * Jun 29, 2020 -- v2.0.0
-      * Added `flags()` to retrieve all the flags at once.
+      * Added `values()` to retrieve all the flag values at once.
         Example:
         ```javascript
         opts.parse([{
@@ -20,7 +20,7 @@
         }, {
           short: 'b', long: 'bool'
         }])
-        const { n, b } = opts.flags()
+        const { n, b } = opts.values()
         ```
 
       * Changes the output of the auto-generated help text.
