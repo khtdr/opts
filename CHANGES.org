@@ -22,7 +22,7 @@ examples, docs
 no code changes, added typescript definitions
 
 ** Jun 29, 2020 =v2.0.0=
-- Added ~flags()~ to retrieve all the flags at once.
+- Added ~values()~ to retrieve all the flag values at once.
 #+BEGIN_SRC javascript
 opts.parse([{
     value: true, required: true,
@@ -30,7 +30,7 @@ opts.parse([{
 }, {
     short: 'b', long: 'bool'
 }])
-const { n, b } = opts.flags()
+const { n, b } = opts.values()
 #+END_SRC
 
 - Changes the output of the auto-generated help text.
