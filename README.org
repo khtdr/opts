@@ -4,7 +4,7 @@ Find the full documentation, source code, and examples online at https://khtdr.c
 
 Or download this README as a man-page.
 #+BEGIN_SRC bash
-curl -o opts.3 https://raw.githubusercontent.com/khtdr/opts/master/opts.3
+curl -o opts.3 https://raw.githubusercontent.com/khtdr/opts/master/man.3
 man ./opts.3
 #+END_SRC
 
