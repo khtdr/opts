@@ -132,11 +132,12 @@ let options = [
 ~arguments~ require less configuration. This is an optional argument to ~opts.parse~:
 
 #+BEGIN_SRC javascript
-let arguments =
-  { name     : 'script',
-    required : true, // not required by default
-    callback : function (value) { ... },
-  };
+let arguments = [
+    { name     : 'script',
+      required : true, // not required by default
+      callback : function (value) { ... },
+    };
+  ]
 #+END_SRC
 
 *** help text generator
